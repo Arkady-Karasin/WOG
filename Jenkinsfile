@@ -8,7 +8,7 @@ agent any
         }
         stage('build') {
             steps {
-			   dir('Build'){
+			   dir('venv'){
                    bat 'docker build .'
 			   }
             }

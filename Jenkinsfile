@@ -9,7 +9,7 @@ agent any
         stage('build') {
             steps {
 			   dir('Build/venv'){
-                   bat 'docker build .'
+                   bat 'docker-compose up'
 			   }
             }
         }

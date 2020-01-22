@@ -1,7 +1,11 @@
-FROM python:3
-COPY requirements.txt /wog/requirements.txt
-WORKDIR /wog
-RUN pip install Flask
-RUN pip install selenium
-ADD . /wog
-CMD ["python", "./MainScores.py"]
+FROM python:3.7-alpine
+WORKDIR /code
+#ENV FLASK_APP app.py
+ENV FLASK_APP MainScores.py
+ENV FLASK_RUN_HOST 0.0.0.0
+RUN apk add --no-cache gcc musl-dev linux-headers
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+COPY . .
+#ADD . /wog
+CMD ["flask", "run"]

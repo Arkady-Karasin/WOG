@@ -5,6 +5,4 @@ services:
 #    stdin_open: true
 #    tty: true
     ports:
-    - "8777:8777"
-  redis:
-    image: redis
+    - "8777:5000"

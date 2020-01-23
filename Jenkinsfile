@@ -6,6 +6,11 @@ agent any
                 git 'https://github.com/Arkady-Karasin/JenkinsTest.git'
             }
         }
+		stage('Start e2e') {
+		    steps {
+			    build 'Check WoG score'
+			}
+		}
         stage('build') {
             steps {
 			   dir('Build/venv'){
@@ -13,10 +18,5 @@ agent any
 			   }
             }
         }
-		stage('Start browser') {
-		    steps {
-			    bat 'python e2e.py'
-			}
-		}
 	}
 }

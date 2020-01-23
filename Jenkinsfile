@@ -13,5 +13,10 @@ agent any
 			   }
             }
         }
-    }
+		stage('Start browser') {
+		    steps {
+			    bat 'python e2e.py'
+			}
+		}
+	}
 }

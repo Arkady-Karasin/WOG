@@ -24,7 +24,7 @@ def test_scores_service(app_url):
         exit()
     chrome_driver = webdriver.Chrome(executable_path=chrome_dr_loc)
     chrome_driver.implicitly_wait(10)
-    chrome_driver.get('http://localhost:8777')
+    chrome_driver.get('http://192.168.99.100:8777')
     chrome_driver.implicitly_wait(10)
     score = int(chrome_driver.find_element_by_id('score').text)
     print("Score: ", score)

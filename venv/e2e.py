@@ -33,10 +33,9 @@ def test_scores_service(app_url):
     else:
         return False
 
-def main_function():
-    app_url = Utils.APP_URL
-    if test_scores_service(app_url) == 1:
-        return 1
-    else:
-        return 0
 
+app_url = Utils.APP_URL
+if test_scores_service(app_url) == 1:
+    print('1')
+else:
+    print('0')

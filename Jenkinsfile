@@ -3,27 +3,28 @@ agent any
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/Arkady-Karasin/JenkinsTest.git'
+                git 'https://github.com/Arkady-Karasin/WOG.git'
             }
         }
-		stage('Start e2e') {
+        stage('docker start') {
+            steps {
+			   dir('venv'){
+                   bat 'docker-compose start'
+			   }
+            }
+        }
+        stage('Start e2e') {
 		    steps {
-			    build 'Check WoG score'
+                dir('test')
+                bat 'python e2e.py'
 			}
 		}
-        stage('build') {
+        stage('docker stop') {
             steps {
-			   dir('Build/venv'){
-                   bat 'docker-compose up'
+			   dir('venv'){
+                   bat 'docker-compose stop'
 			   }
             }
         }
 	}
-//	post {
-    // Always runs. And it runs before any of the other post conditions.
-//        always {
-      // Let's wipe out the workspace before we finish!
-//           deleteDir()
-//        }
-//	}
 }

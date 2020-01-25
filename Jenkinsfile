@@ -15,8 +15,9 @@ agent any
         }
         stage('Start e2e') {
 		    steps {
-                dir('venv/test')
-                bat 'python e2e.py'
+                dir('venv/test') {
+                    bat 'python e2e.py'
+				}
 			}
 		}
         stage('docker stop') {

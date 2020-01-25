@@ -15,7 +15,7 @@ agent any
         }
         stage('Start e2e') {
 		    steps {
-                dir('test')
+                dir('venv/test')
                 bat 'python e2e.py'
 			}
 		}

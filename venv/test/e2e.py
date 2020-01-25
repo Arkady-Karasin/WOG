@@ -4,7 +4,6 @@
 
 
 from selenium import webdriver
-import Utils
 import os
 
 ########################################
@@ -34,7 +33,7 @@ def test_scores_service(app_url):
         return False
 
 
-app_url = Utils.APP_URL
+app_url = 'http://192.168.99.100:8777'
 if test_scores_service(app_url) == 1:
     print('1')
 else:

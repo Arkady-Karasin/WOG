@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04fb0081-fc98-427f-8425-cf31e8ff8e0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/e2e.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2019_12_23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_12_23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Live.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Live.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/MainGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/MainGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scores.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/WoG.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/test/e2e.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test/e2e.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UOT26txouHyAHQadp6tjljWay4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -53,28 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Live">
-    <configuration name="Live" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="WorldOfGames" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Live.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.e2e">
     <configuration name="MainGame" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="WorldOfGames" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,6 +132,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="e2e" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WorldOfGames" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/test" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/test/e2e.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.e2e" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

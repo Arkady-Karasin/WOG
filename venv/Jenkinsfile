@@ -15,9 +15,8 @@ agent any
         }
         stage('Start e2e') {
 		    steps {
-		        catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-			        build 'Check WoG score'
-		        }
+                dir('test')
+                bat 'python e2e.py'
 			}
 		}
         stage('docker stop') {
